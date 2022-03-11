@@ -20,7 +20,7 @@ dist
 # comment the following lines
 !.yarn/cache
 # and uncomment the following lines
-# .pnp.*
+.pnp.*
 
 # other package manager's stuff
 .yarnrc

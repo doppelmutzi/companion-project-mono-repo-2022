@@ -1,0 +1,11 @@
+{
+    "name": "@doppelmutzi/server",
+    "version": "1.0.0",
+    "scripts": {
+        "serve": "http-server --p 4000 --cors -c-1 ./assets",
+        "lint": "echo lint @doppelutzi/server"
+    },
+    "dependencies": {
+        "http-server": "14.0.0"
+    }
+}

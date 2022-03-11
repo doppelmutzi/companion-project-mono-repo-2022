@@ -2,25 +2,23 @@
   "name": "package-manager-playground",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@3.1.1",
+  "packageManager": "yarn@3.2.0",
   "workspaces": {
     "packages": [
       "packages/*"
     ]
   },
-  "scripts": {
-    "l": "ntl",
-    "start": "npm-run-all -l --parallel dev server",
+  "scripts": {    
+    "start": "npm-run-all -l --parallel dev start-server",
+    "start-server": "yarn workspace @doppelmutzi/server serve",
     "dev": "webpack serve --env env=dev",
-    "dev:analyze": "yarn dev -- --env addons=bundleanalyzer",
-    "prebuild": "rimraf dist",
-    "build": "webpack --env env=prod",
-    "build:analyze": "yarn build -- --env addons=bundleanalyzer",
-    "server": "http-server --p 4000 --cors -c-1 ./public/assets"
+    "lint-packages": "yarn workspaces foreach -ptR run lint",    
+    "upgrade-yarn": "yarn set version latest"
   },
   "dependencies": {
+    "@doppelmutzi/eslint-config": "workspace:*",
     "@doppelmutzi/hooks": "workspace:*",
-    "http-server": "14.0.0",
+    "@doppelmutzi/server": "workspace:*",
     "npm-run-all": "4.1.5",
     "prop-types": "15.8.0",
     "react": "17.0.2",
@@ -57,7 +55,6 @@
     "eslint-plugin-react-hooks": "4.3.0",
     "file-loader": "6.2.0",
     "html-webpack-plugin": "5.5.0",
-    "ntl": "5.1.0",
     "prettier": "2.5.1",
     "react-hot-loader": "4.13.0",
     "rimraf": "3.0.2",

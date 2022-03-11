@@ -1,8 +1,10 @@
 {
   "name": "@doppelmutzi/hooks",
-  "private": true,
-  "packageManager": "yarn@3.1.1",
+  "version": "1.0.0",
   "main": "./src/index.js",
+  "scripts": {
+    "lint": "echo lint @doppelutzi/hooks"
+  },
   "dependencies": {
     "react": "17.0.2"
   },
