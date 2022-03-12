@@ -36,7 +36,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     "enableTopLevelFallback": true,\
     "ignorePatternData": "(^(?:\\\\.yarn\\\\/sdks(?:\\\\/(?!\\\\.{1,2}(?:\\\\/|$))(?:(?:(?!(?:^|\\\\/)\\\\.{1,2}(?:\\\\/|$)).)*?)|$))$)",\
     "fallbackExclusionList": [\
-      ["@doppelmutzi/eslint-config", ["virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#workspace:packages/eslint-config", "workspace:packages/eslint-config"]],\
+      ["@doppelmutzi/eslint-config", ["workspace:packages/eslint-config"]],\
       ["@doppelmutzi/hooks", ["workspace:packages/hooks"]],\
       ["@doppelmutzi/server", ["workspace:packages/server"]],\
       ["package-manager-playground", ["workspace:."]]\
@@ -56,7 +56,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:7.16.5"],\
             ["@babel/preset-react", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:7.16.5"],\
             ["@babel/runtime", "npm:7.16.5"],\
-            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#workspace:packages/eslint-config"],\
+            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964"],\
             ["@doppelmutzi/hooks", "workspace:packages/hooks"],\
             ["@doppelmutzi/server", "workspace:packages/server"],\
             ["@hot-loader/react-dom", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:17.0.1"],\
@@ -2432,10 +2432,17 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         }]\
       ]],\
       ["@doppelmutzi/eslint-config", [\
-        ["virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#workspace:packages/eslint-config", {\
-          "packageLocation": "./.yarn/__virtual__/@doppelmutzi-eslint-config-virtual-9ba3971d51/1/packages/eslint-config/",\
+        ["git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964", {\
+          "packageLocation": "./.yarn/cache/@doppelmutzi-eslint-config-git@github.com-2d11e5135b-ccf7fff4c6.zip/node_modules/@doppelmutzi/eslint-config/",\
           "packageDependencies": [\
-            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#workspace:packages/eslint-config"],\
+            ["@doppelmutzi/eslint-config", "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964", {\
+          "packageLocation": "./.yarn/__virtual__/@doppelmutzi-eslint-config-virtual-1f7ca876b5/0/cache/@doppelmutzi-eslint-config-git@github.com-2d11e5135b-ccf7fff4c6.zip/node_modules/@doppelmutzi/eslint-config/",\
+          "packageDependencies": [\
+            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964"],\
             ["@babel/eslint-parser", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:7.16.5"],\
             ["@types/babel__eslint-parser", null],\
             ["@types/eslint-config-prettier", null],\
@@ -2483,7 +2490,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "eslint-plugin-react",\
             "prettier"\
           ],\
-          "linkType": "SOFT"\
+          "linkType": "HARD"\
         }],\
         ["workspace:packages/eslint-config", {\
           "packageLocation": "./packages/eslint-config/",\
@@ -7847,7 +7854,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-env", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:7.16.5"],\
             ["@babel/preset-react", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:7.16.5"],\
             ["@babel/runtime", "npm:7.16.5"],\
-            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#workspace:packages/eslint-config"],\
+            ["@doppelmutzi/eslint-config", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964"],\
             ["@doppelmutzi/hooks", "workspace:packages/hooks"],\
             ["@doppelmutzi/server", "workspace:packages/server"],\
             ["@hot-loader/react-dom", "virtual:379a23177014107aee7e4df99b0a08752cc39c8742fd8ab743e365d25721dcfe62f26bc1447f5696ca9e75a896719c5247d7224538a5cdaf6fb447f996f74a9d#npm:17.0.1"],\

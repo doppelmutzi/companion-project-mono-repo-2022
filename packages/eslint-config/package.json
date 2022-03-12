@@ -1,10 +1,16 @@
 {
     "name": "@doppelmutzi/eslint-config",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "license": "MIT",
+    "author": "Sebastian Weber",
     "description": "shared ESLint and Prettier config",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/doppelmutzi/companion-project-mono-repo-2022"
+    },
     "main": "./eslint-config.js",
     "scripts": {
-        "publish-manual": "yarn publish"
+        "publish-manual": "yarn npm publish --access public"
     },
     "peerDependencies": {
         "@babel/eslint-parser": "7.16.5",

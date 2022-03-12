@@ -1365,7 +1365,26 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@doppelmutzi/eslint-config@workspace:*, @doppelmutzi/eslint-config@workspace:packages/eslint-config":
+"@doppelmutzi/eslint-config@git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config":
+  version: 1.0.0
+  resolution: "@doppelmutzi/eslint-config@git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=%40doppelmutzi%2Feslint-config&commit=ddfb3c9f7c3f594e82a9d1718b50bbf723c95964"
+  peerDependencies:
+    "@babel/eslint-parser": 7.16.5
+    eslint-config-prettier: 8.3.0
+    eslint-config-standard: 16.0.3
+    eslint-import-resolver-node: 0.3.6
+    eslint-plugin-import: 2.25.3
+    eslint-plugin-node: 11.1.0
+    eslint-plugin-prettier: 4.0.0
+    eslint-plugin-promise: 6.0.0
+    eslint-plugin-react: 7.28.0
+    eslint-plugin-react-hooks: 4.3.0
+    prettier: 2.5.1
+  checksum: ccf7fff4c62184d5226ac63256306efe465dc81d068372c9961baca487c0707144827c030a10c0cb04fcb49e79f1938bca48f00cd0d28d4276190fc5fb4d9e28
+  languageName: node
+  linkType: hard
+
+"@doppelmutzi/eslint-config@workspace:packages/eslint-config":
   version: 0.0.0-use.local
   resolution: "@doppelmutzi/eslint-config@workspace:packages/eslint-config"
   peerDependencies:
@@ -5801,7 +5820,7 @@ __metadata:
     "@babel/preset-env": 7.16.5
     "@babel/preset-react": 7.16.5
     "@babel/runtime": 7.16.5
-    "@doppelmutzi/eslint-config": "workspace:*"
+    "@doppelmutzi/eslint-config": "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config"
     "@doppelmutzi/hooks": "workspace:*"
     "@doppelmutzi/server": "workspace:*"
     "@hot-loader/react-dom": 17.0.1
