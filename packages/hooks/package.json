@@ -10,5 +10,6 @@
   },
   "devDependencies": {
     "@babel/runtime": "7.16.5"
-  }
+  },
+  "packageManager": "yarn@3.2.0"
 }

@@ -17,9 +17,9 @@
     "list-workspaces": "yarn workspaces list --json"
   },
   "dependencies": {
+    "@doppelmutzi/eslint-config": "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config",
     "@doppelmutzi/hooks": "workspace:*",
     "@doppelmutzi/server": "workspace:*",
-    "@doppelmutzi/eslint-config": "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config",
     "npm-run-all": "4.1.5",
     "prop-types": "15.8.0",
     "react": "17.0.2",
