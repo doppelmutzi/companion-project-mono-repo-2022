@@ -2,22 +2,17 @@
   "name": "package-manager-playground",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "yarn@3.2.0",
-  "workspaces": {
-    "packages": [
-      "packages/*"
-    ]
-  },
+  "packageManager": "pnpm@6.32.3",
+
   "scripts": {
     "start": "npm-run-all -l --parallel dev start-server",
-    "start-server": "yarn workspace @doppelmutzi/server serve",
+    "start-server": "pnpm run serve --filter @doppelmutzi/server",
     "dev": "webpack serve --env env=dev",
-    "lint-packages": "yarn workspaces foreach -ptR run lint",
-    "upgrade-yarn": "yarn set version latest",
-    "list-workspaces": "yarn workspaces list --json"
+    "publish-eslint-config": "pnpm publish --filter @doppelmutzi/eslint-config",
+    "lint-packages": "pnpm run -r lint"
   },
   "dependencies": {
-    "@doppelmutzi/eslint-config": "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config",
+    "@doppelmutzi/eslint-config": "workspace:*",
     "@doppelmutzi/hooks": "workspace:*",
     "@doppelmutzi/server": "workspace:*",
     "npm-run-all": "4.1.5",

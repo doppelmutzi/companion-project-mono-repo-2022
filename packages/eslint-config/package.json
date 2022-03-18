@@ -1,6 +1,6 @@
 {
     "name": "@doppelmutzi/eslint-config",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "license": "MIT",
     "author": "Sebastian Weber",
     "description": "shared ESLint and Prettier config",
@@ -10,7 +10,7 @@
     },
     "main": "./eslint-config.js",
     "scripts": {
-        "publish-manual": "yarn npm publish --access public"
+        "publish-manual": "pnpm publish"
     },
     "peerDependencies": {
         "@babel/eslint-parser": "7.16.5",
@@ -24,6 +24,5 @@
         "eslint-plugin-react": "7.28.0",
         "eslint-plugin-react-hooks": "4.3.0",
         "prettier": "2.5.1"
-    },
-    "packageManager": "yarn@3.2.0"
+    }
 }
