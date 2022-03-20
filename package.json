@@ -5,7 +5,7 @@
   "packageManager": "pnpm@6.32.3",
 
   "scripts": {
-    "start": "npm-run-all -l --parallel dev start-server",
+    "start": "run-p dev start-server",
     "start-server": "pnpm run serve --filter @doppelmutzi/server",
     "dev": "webpack serve --env env=dev",
     "publish-eslint-config": "pnpm publish --filter @doppelmutzi/eslint-config",
