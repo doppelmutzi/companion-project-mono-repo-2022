@@ -8,10 +8,12 @@
   ],
   "scripts": {
     "start": "run-p dev start-server",
-    "start-server": "npm run serve --workspace @doppelmutzi/server",
+    "start-server": "npm run serve -w @doppelmutzi/server",
     "dev": "webpack serve --env env=dev",
     "publish-eslint-config": "npm publish --workspace @doppelmutzi/eslint-config",
-    "lint-packages": "npm run lint --workspaces --if-present"
+    "lint-packages": "npm run lint --workspaces --if-present",
+    "lint-packages:parallel": "npm run lint -w @doppelmutzi/hooks & npm run lint -w @doppelmutzi/server",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "dependencies": {
     "@doppelmutzi/eslint-config": "file:./packages/eslint-config",
