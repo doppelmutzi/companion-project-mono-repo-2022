@@ -10,7 +10,7 @@ dist
 
 # other package manager's stuff
 .yarnrc
-.yarnrc
+.yarnrc.yml
 .yarn/
 node_modules
 package-lock.json
