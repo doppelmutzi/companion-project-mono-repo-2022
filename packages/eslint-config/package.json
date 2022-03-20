@@ -1,6 +1,6 @@
 {
     "name": "@doppelmutzi/eslint-config",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "license": "MIT",
     "author": "Sebastian Weber",
     "description": "shared ESLint and Prettier config",
@@ -10,7 +10,7 @@
     },
     "main": "./eslint-config.js",
     "scripts": {
-        "publish-manual": "pnpm publish"
+        "publish-manual": "npm publish"
     },
     "peerDependencies": {
         "@babel/eslint-parser": "7.16.5",

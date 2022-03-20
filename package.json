@@ -2,19 +2,21 @@
   "name": "package-manager-playground",
   "version": "1.0.0",
   "private": true,
-  "packageManager": "pnpm@6.32.3",
-
+  "packageManager": "npm@8.3.1",
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
-    "start": "npm-run-all -l --parallel dev start-server",
-    "start-server": "pnpm run serve --filter @doppelmutzi/server",
+    "start": "run-p dev start-server",
+    "start-server": "npm run serve --workspace @doppelmutzi/server",
     "dev": "webpack serve --env env=dev",
-    "publish-eslint-config": "pnpm publish --filter @doppelmutzi/eslint-config",
-    "lint-packages": "pnpm run -r lint"
+    "publish-eslint-config": "npm publish --workspace @doppelmutzi/eslint-config",
+    "lint-packages": "npm run lint --workspaces --if-present"
   },
   "dependencies": {
-    "@doppelmutzi/eslint-config": "workspace:*",
-    "@doppelmutzi/hooks": "workspace:*",
-    "@doppelmutzi/server": "workspace:*",
+    "@doppelmutzi/eslint-config": "file:./packages/eslint-config",
+    "@doppelmutzi/hooks": "file:./packages/hooks",
+    "@doppelmutzi/server": "file:./packages/server",
     "npm-run-all": "4.1.5",
     "prop-types": "15.8.0",
     "react": "17.0.2",
