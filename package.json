@@ -9,7 +9,8 @@
     "start-server": "pnpm run serve --filter @doppelmutzi/server",
     "dev": "webpack serve --env env=dev",
     "publish-eslint-config": "pnpm publish --filter @doppelmutzi/eslint-config",
-    "lint-packages": "pnpm run -r lint --parallel"
+    "lint-packages": "pnpm run -r lint --parallel",
+    "clean": "find . -name 'node_modules' -type d -prune -exec rm -rf '{}' +"
   },
   "dependencies": {
     "@doppelmutzi/eslint-config": "workspace:*",
