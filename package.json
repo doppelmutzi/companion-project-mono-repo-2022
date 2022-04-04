@@ -14,7 +14,8 @@
     "dev": "webpack serve --env env=dev",
     "lint-packages": "yarn workspaces foreach -ptR run lint",
     "upgrade-yarn": "yarn set version latest",
-    "list-workspaces": "yarn workspaces list --json"
+    "list-workspaces": "yarn workspaces list --json",
+    "root:name": "cat package.json | grep name"
   },
   "dependencies": {
     "@doppelmutzi/eslint-config": "git@github.com:doppelmutzi/companion-project-mono-repo-2022.git#workspace=@doppelmutzi/eslint-config",
